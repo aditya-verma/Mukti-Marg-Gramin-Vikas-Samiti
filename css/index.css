@@ -1,17 +1,62 @@
-body {background-color: powderblue;}
-#header	{background-color: white;
-				 font-size: 40;
-	  		 padding: 7px;
-				}
-#header ul{	margin: 0;
-						padding: 0;
-						list-style-type: none;
-						text-align: right;
-					}
-#header ul li	{display: inline;}
-#header ul li a { text-decoration: none;
-									padding: .2em 1em;
-									color: #fff;
-									background-color: #036;}
-#header ul li a:hover{color: #fff; background-color: #369;}									
-#middle	{background-color: red;}
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: auto;
+	background-color: powderblue;
+}
+/*-------------------------------------------FONTS---------------------------------------------*/
+@font-face {
+	font-family: 'audiowide-regular-webfont';
+	src: url('../fonts/audiowide-regular-webfont.eot');
+	src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
+}
+/*----------------------------------------header-styles---------------------------------------*/
+#header {
+	margin: 0;
+	min-height: 60px;
+	padding: 0;
+	width: auto;
+	}
+#header div {
+	margin: 0 auto;
+	max-width: 940px;
+	min-height: 60px;
+	padding: 0 10px;
+}
+#header ul{	
+	display: inline-block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+#header ul li	{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+#header ul li a {
+	color: #ffffff;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
+	}
+#header ul li a:hover{
+	background-color: #620031;
+	color: #ffffff;
+	}									
+#middle	{
+	background-color: red;
+	}
