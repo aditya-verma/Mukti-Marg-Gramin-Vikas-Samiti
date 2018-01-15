@@ -110,8 +110,8 @@ body {
 #content {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 80%;
-    max-width: 978px;
+    width: 100%;
+    max-width: 1920px;
 }
 /* Loaded */
 .loaded #loader-wrapper .loader-section.section-left {
@@ -191,9 +191,12 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	width: auto;
+	
 	}
 #header ul li a:hover{
-	background-color: #620031;
+	border: 2px;
+	border-color: #2196F3;
+	background-color: #0099FF;
 	color: #ffffff;
 	}									
 #middle	{
