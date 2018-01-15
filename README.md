@@ -19,18 +19,17 @@ We are a community of outward-focused volunteers, guided by the principle of doi
 -	Mukti Marg vocational training centers enable adults to earn an income 
 -	Mukti Marg women's empowerment 
 -	Skills training in prisons
-
 ### Homes
 -	Mukti Marg children's homes
 -	Support for shelters, children's homes, homes for the aged and the disabled
 ### Development
--		Recharging ground water through rain water harvesting
--		Water purification and recycling
--		Mosquito eradication
--		Efficient agriculture methods
--		Upliftment of disadvantaged families
--		Village adoption and development
--		Disaster relief
+-	Recharging ground water through rain water harvesting
+-	Water purification and recycling
+-	Mosquito eradication
+-	Efficient agriculture methods
+-	Upliftment of disadvantaged families
+-	Village adoption and development
+-	Disaster relief
 ### Environment
 -	Waste management and recycling
 -	'Greening' and afforestation
