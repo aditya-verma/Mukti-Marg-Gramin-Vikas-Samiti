@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	position: relative;
 	width: auto;
-	background-color: powderblue;
+	background-color: #f4fffd;
 }
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
@@ -165,7 +165,7 @@ body {
 }
 #header ul{	
 	display: inline-block;
-	float: left;
+	float: right;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -178,7 +178,7 @@ body {
 	width: auto;
 	}
 #header ul li a {
-	color: #ffffff;
+	color: #000000;
 	display: block;
 	font-family: Arial;
 	font-size: 18px;
@@ -202,3 +202,22 @@ body {
 #middle	{
 	background-color: red;
 	}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+		height: 200px;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+}
+#social_footer ul{
+	list-style:none;
+	display: inline-block;
+	float: right;
+	vertical-align: bottom;
+}
+#social_footer ul li{
+	float: left;
+}
