@@ -156,12 +156,14 @@ body {
 	min-height: 60px;
 	padding: 0;
 	width: auto;
+	background-color: #666666;
 	}
 #header div {
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 60px;
 	padding: 0 10px;
+	
 }
 #header ul{	
 	display: inline-block;
@@ -178,7 +180,7 @@ body {
 	width: auto;
 	}
 #header ul li a {
-	color: #000000;
+	color: #ffffff;
 	display: block;
 	font-family: Arial;
 	font-size: 18px;
@@ -194,14 +196,25 @@ body {
 	
 	}
 #header ul li a:hover{
-	border: 2px;
-	border-color: #2196F3;
-	background-color: #0099FF;
+	background-color: #262626;
 	color: #ffffff;
 	}									
 #middle	{
-	background-color: red;
+	background-color: #f4fffd;
+	height: 100px;
+	width: 49.8%;
+	float:left;
+	border: solid #000;
+	border-width: 1 0px;
 	}
+#middle2 {
+	background-color: #f4fffd;
+	height: 100px;
+	width: 50%;
+	float: left;
+	border: solid #000;
+	border-width: 1 1px;
+}
 .footer {
     position: fixed;
     left: 0;
@@ -212,12 +225,11 @@ body {
     color: white;
     text-align: center;
 }
-#social_footer ul{
-	list-style:none;
-	display: inline-block;
-	float: right;
-	vertical-align: bottom;
+#social_footer {
+	position: fixed;
+    bottom: 0;
+    right: 0;
 }
-#social_footer ul li{
-	float: left;
+#social_footer img:hover{
+	opacity: 0.5;
 }
