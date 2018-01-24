@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	position: relative;
 	width: auto;
-	background-color: #f4fffd;
+	background-color: #ffffff;
 }
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
@@ -108,6 +108,7 @@ body {
     z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
 }
 #content {
+		position: relative;
     margin: 0 auto;
     padding-bottom: 50px;
     width: 100%;
@@ -150,24 +151,93 @@ body {
         -webkit-transition: all 0.3s 1s ease-out; 
                 transition: all 0.3s 1s ease-out;
 }
-/*----------------------------------------header-styles---------------------------------------*/
-#header {
+/*----------------------------------------Contact Bar-----------------------------------------*/
+#contact_bar {
 	margin: 0;
 	min-height: 60px;
+	min-width: 940px;
 	padding: 0;
-	width: auto;
-	background-color: #666666;
+	width: 100%;
+	top: 0px;
+	transition: top 0.3s;
+	background-color: #262626;
 	}
-#header div {
+#contact_bar div {
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 60px;
 	padding: 0 10px;
 	
 }
+#contact_bar ul{	
+	display: inline-block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+#contact_bar ul li	{
+	float: left;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	width: auto;
+	}
+#contact_bar ul li img {
+  display: inline-block;
+  margin: 0 10px;
+}
+#contact_bar ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	width: auto;
+}
+/*----------------------------------------header-styles---------------------------------------*/
+#header {
+	position: fixed;
+	top: 60px;
+	transition: top 0.3s;
+	margin: 0;
+	min-height: 120px;
+	padding: 0;
+	width: 100%;
+	min-width: 1040px;
+	background-color: #fcfcfc;
+	opacity: 0.9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+#header div {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 120px;
+	padding: 0 10px;
+	
+}
 #header ul{	
 	display: inline-block;
-	float: right;
+	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -180,7 +250,8 @@ body {
 	width: auto;
 	}
 #header ul li a {
-	color: #ffffff;
+	color: #000000;
+	text-decoration: none;
 	display: block;
 	font-family: Arial;
 	font-size: 18px;
@@ -193,42 +264,45 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	width: auto;
-	
-	}
-#header ul li a:hover{
-	background-color: #262626;
-	color: #ffffff;
-	}									
-#middle	{
-	background-color: #f4fffd;
-	height: 100px;
-	width: 49.8%;
-	float:left;
-	border: solid #000;
-	border-width: 1 0px;
-	}
-#middle2 {
-	background-color: #f4fffd;
-	height: 100px;
-	width: 50%;
-	float: left;
-	border: solid #000;
-	border-width: 1 1px;
 }
-.footer {
-    position: fixed;
-    left: 0;
+/*----------------------------------------poster-styles---------------------------------------*/
+#poster {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	height: 809px;
+	min-height: 809px;
+	padding: 0;
+	width: auto;
+	min-width: 940px;
+	background-color: #000000;
+	top: 60px;
+	z-index: -1;
+	}
+#poster div {
+	margin: 0 auto;
+	max-width: 100%;
+	min-height: 120px;
+	padding: 0 10px;
+}
+
+/*----------------------------------------footer-styles---------------------------------------*/
+#footer {
+    position: absolute;
+		top: 820px;
+		left: 0;
     bottom: 0;
     width: 100%;
-		height: 200px;
+		height: auto;
+		min-height: 60px;
     background-color: #262626;
-    color: white;
-    text-align: center;
+		z-index: -1;
 }
+
 #social_footer {
-	position: fixed;
-    bottom: 0;
-    right: 0;
+	position: absolute;
+  bottom: 0;
+  right: 0;
 }
 #social_footer img:hover{
 	opacity: 0.5;
