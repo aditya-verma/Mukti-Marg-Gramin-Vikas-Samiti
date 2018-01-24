@@ -221,7 +221,7 @@ body {
 	min-height: 120px;
 	padding: 0;
 	width: 100%;
-	min-width: 1040px;
+	min-width: 940px;
 	background-color: #fcfcfc;
 	opacity: 0.9;
 	display: flex;
@@ -281,7 +281,7 @@ body {
 	}
 #poster div {
 	margin: 0 auto;
-	max-width: 100%;
+	width: 100%;
 	min-height: 120px;
 	padding: 0 10px;
 }
