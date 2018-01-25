@@ -334,9 +334,10 @@ body {
   padding: 0px;
   width: 350px;
 	height: 40px;
-  margin: 5px;
+  margin: 0px;
 	position: absolute;
 	top: 254px;
+	cursor: pointer;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
