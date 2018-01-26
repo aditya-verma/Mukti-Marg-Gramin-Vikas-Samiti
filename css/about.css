@@ -3,7 +3,15 @@ body {
 	padding: 0;
 	position: relative;
 	width: auto;
-	background-color: #f4fffd;
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+.hidden-thing {
+  position: absolute;
+  left: 100%;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
 }
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
@@ -11,23 +19,99 @@ body {
 	src: url('../fonts/audiowide-regular-webfont.eot');
 	src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
 }
-/*----------------------------------------header-styles---------------------------------------*/
-#header {
+@font-face {
+	font-family: 'fontawesome-webfont';
+	src: url('../fonts/fontawesome-webfont.eot');
+	src: url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+}
+
+/*----------------------------------------Contact Bar-----------------------------------------*/
+#contact_bar {
 	margin: 0;
 	min-height: 60px;
+	min-width: 940px;
 	padding: 0;
-	width: auto;
-	background-color: #666666;
+	width: 100%;
+	top: 0px;
+	transition: top 0.3s;
+	background-color: #262626;
 	}
-#header div {
+#contact_bar div {
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 60px;
 	padding: 0 10px;
+	
+}
+#contact_bar ul{	
+	display: inline-block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+#contact_bar ul li	{
+	float: left;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	width: auto;
+	}
+#contact_bar ul li img {
+  display: inline-block;
+  margin: 0 10px;
+}
+#contact_bar ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	width: auto;
+}
+/*----------------------------------------header-styles---------------------------------------*/
+#header {
+	position: fixed;
+	top: 60px;
+	transition: top 0.3s;
+	margin: 0;
+	min-height: 120px;
+	padding: 0;
+	width: 100%;
+	min-width: 940px;
+	background-color: #fcfcfc;
+	opacity: 0.9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+#header div {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 120px;
+	padding: 0 10px;
+	
 }
 #header ul{	
 	display: inline-block;
-	float: right;
+	float: left;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -40,7 +124,8 @@ body {
 	width: auto;
 	}
 #header ul li a {
-	color: #ffffff;
+	color: #000000;
+	text-decoration: none;
 	display: block;
 	font-family: Arial;
 	font-size: 18px;
@@ -53,32 +138,145 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	width: auto;
+}
+/*----------------------------------------poster-styles---------------------------------------*/
+#poster {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	height: 809px;
+	min-height: 809px;
+	padding: 0;
+	width: auto;
+	min-width: 940px;
+	background-color: #000000;
+	top: 60px;
+	z-index: -1;
 	}
-#header ul li a:hover{
-	border: 2px;
-	border-color: #2196F3;
-	background-color: #262626;
+#poster div {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 120px;
+	padding: 0 10px;
+}
+/*----------------------------------------Message-Box---------------------------------*/
+#wrapper-message-box {
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	min-width: 300px;
+	top: 569px;
+}
+#message-box-line {
+	position: absolute;
+	margin: 0;
+	min-height: 2px;
+	height: 2px;
+	width: 100%;
+	top: 300px;
+	background-color: #f06918;
+}
+#message-box {
+	position: absolute;
+	width:350px;
+	right: 200px;
+	background-color: transparent;
+	z-index: 1;
+}
+#message-box .collapsible {
+  border-radius: 2px;
+  background-image: url('Image/button.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+  border: none;
+  text-align: center;
 	color: #ffffff;
-	}									
-#middle	{
-	background-color: red;
+  font-size: 28px;
+  padding: 0px;
+  width: 350px;
+	height: 40px;
+  margin: 0px;
+	position: absolute;
+	top: 254px;
+	cursor: pointer;
+}
+/*----------------------------------------footer-styles---------------------------------------*/
+#footer {
+	position: absolute;
+  margin: 0;
+	min-height: 100px;
+	min-width: 940px;
+	padding: 0;
+	width: 100%;
+	top: 871px;
+	background-color: #ffffff;
+}
+
+#social_footer {
+	margin: 0;
+	min-height: 50px;
+	min-width: 940px;
+	padding: 0;
+	width: 100%;
+	background-color: #262626;
 	}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-		height: 200px;
-    background-color: #262626;
-    color: white;
-    text-align: center;
+#social_footer div {
+	margin: 0 auto;
+	max-width: 940px;
+	min-height: 50px;
+	padding: 0 10px;
+	
 }
-#social_footer ul{
-	list-style:none;
+#social_footer ul{	
 	display: inline-block;
-	float: right;
-	vertical-align: bottom;
-}
-#social_footer ul li{
 	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+#social_footer ul li	{
+	float: left;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	width: auto;
+	}
+#social_footer ul li img {
+  display: inline-block;
+  margin: 0 10px;
+}
+#social_footer ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ *padding: 0 23px; /* Needed for IE8 and old versions */
+	text-align: center;
+	width: auto;
+}	
+#twitter {
+	float: right;
+	padding-right:	10px;
+	padding-top: 4px;
+}
+#facebook {
+	float: right;
+	padding-right: 10px;
+	padding-top: 4px;
 }
