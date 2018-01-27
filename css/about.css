@@ -101,6 +101,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 10;
 	}
 #header div {
 	margin: 0 auto;
@@ -140,25 +141,99 @@ body {
 	width: auto;
 }
 /*----------------------------------------poster-styles---------------------------------------*/
-#poster {
+#button_group {
 	position: absolute;
-	left: 0;
-	margin: 0;
-	height: 809px;
-	min-height: 809px;
-	padding: 0;
-	width: auto;
-	min-width: 940px;
-	background-color: #000000;
-	top: 60px;
-	z-index: -1;
-	}
-#poster div {
-	margin: 0 auto;
-	width: 100%;
-	min-height: 120px;
-	padding: 0 10px;
+	width: 400px;
+	height: 365px;
+	top: 300px;
+	left: 50px;
+	background-color: #f06918;
 }
+#button_group .btn {
+	position: relative;
+	background-color: #d24e03; /* Green */
+  width: 350px;
+  color: white;
+	margin: 4px 25px;
+	border-radius: 8px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+	cursor: pointer;	
+}
+#button_group .btn:hover {
+	background-color: #f06918;
+}
+
+#about {
+	position: absolute;
+	margin: 0;
+	border: 2px;
+	border-color: #000000;
+	border-radius: 4px;
+	padding: 0;
+	width: 700px;
+	top: -15px;
+	height: 500px;
+	left: 500px;
+}
+#about .heading {
+	position: absolute;
+	width: 700px;
+	height: 50px;
+	top: -100px;
+	background-color: #f06918;
+	margin: 0;
+	padding: 20px 32px;
+	text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: white;
+	
+}
+#about .matter {
+	position: absolute;
+	width: 700px;
+	height: 350px;
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 0;
+	margin: 0;
+}
+#overview_head {
+	z-index:1;
+}
+#vision_head {
+	z-index:0;
+}
+#mission_head {
+	z-index: 0;
+}
+#philosophy_head {
+	z-index: 0;
+}
+#current_focus_head {
+	z-index: 0;
+}
+#five_year_plan_head {
+	z-index: 0;
+}
+
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
 	position: absolute;
