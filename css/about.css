@@ -268,20 +268,17 @@ body {
 }
 #current_focus .current_focus_matter {
 	position: absolute;
-	width: 350px;
-	height: 250px;
+	width: 380px;
+	height: 300px;
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
-	overflow-x: hidden;
-
 }
 .current_focus_heading {
 	position: absolute;
-	width: 350px;
+	width: 380px;
 	height: 50px;
 	margin: 0;
-	padding: 0;
 	background-color: #000000;
 	color: #ffffff;
 	line-height: 20px;
@@ -289,14 +286,18 @@ body {
 	left: 0;
 }
 .text {
-	position: relative;
-	width: 350px;
+	position: absolute;
+	width: 380px;
 	height: 200px;
-	margin-right: -10px
-	padding: 0;
-	top: 55px;
+	left: 0;
+	margin: 0;	
+	top: 60px;
 	font-size: 20px;
 	text-align: justify;
+	background-color: red;
+}
+.text ul li{
+	padding-right: 10px;
 }
 #education {
 	top: 5px;
@@ -307,15 +308,15 @@ body {
 	right: 10px;
 }
 #homes {
-	top: 330px;
+	top: 325px;
 	left: 10px;
 }
 #development {
-	top: 330px;
+	top: 325px;
 	right: 10px;
 }
 #environment {
-	top: 540px;
+	top: 640px;
 	left: 10px;
 }
 
