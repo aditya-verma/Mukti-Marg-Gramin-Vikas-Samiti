@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	position: relative;
 	width: auto;
+	height: auto;
 	background-color: #ffffff;
 	overflow-x: hidden;
 }
@@ -154,7 +155,7 @@ body {
 	height: 1140px;
 	padding: 0;
 	width: 100%;
-	background-color: #000000;
+	background-color: #ffffff;
 	top: 60px;
 	z-index: -1;
 	}
@@ -163,170 +164,164 @@ body {
 	width: 100%;
 	padding: 0 10px;
 }
-/*AKSHAY tere liye .....ye button group wala streach ho jaa rha h*/
+
 #button_group {
 	position: absolute;
-	left: 10px;
-	
-	top: 180px;
-	background-color: white; 
+	left: 60px;
+	top: 250px;
+	background-color: #f06918;
+	border-radius: 5px;
 }
 #button_group .btn {
 	display: block;
 	width: 300px;
 	height: 50px;
-	margin: 10px 0;
-	cursor: pointer;
+	margin: 5px 0;
+	background-color: #d24e03;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: Arial;
+	-webkit-transition-duration: 0.4s; /* Safari */
+ 	transition-duration: 0.4s;
+	cursor: pointer;	
 }
 #button_group .btn:hover {
-	background-color: #ffffff;
+	background-color: #f06918;
 }
 
 #about {
 	position: absolute;
-	margin: 0;
-	border: 2px;
-	border-color: #000000;
-	border-radius: 4px;
-	padding: 0;
-	width: 700px;
-	height: 800px;
 	top: 225px;
-	height: 500px;
+	height: 400px;
 	left: 500px;
+	background-color: #000000;
 }
+/*---------------------------------Headings begin--------------------------------*/
 #about .heading {
 	position: absolute;
-	width: 700px;
-	height: 50px;
-	top: -100px;
-	background-color: #f06918;
+	width: 800px;
+	height: 100px;
 	margin: 0;
-	padding: 20px 32px;
+	padding: 0;
+	background-color: #f06918;
+	top: -100px;	
+}
+#about .heading h1 {
 	text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-	text-decoration: none;
+	padding-left: 20px;
 	font-family: Arial;
-	font-size: 12px;
-	font-weight: normal;
+	font-size: 40px;
+	line-height: 50px;
 	text-transform: uppercase;
-	color: white;
-	
+	color: #ffffff;
+}
+#overview_head {
+	visibility: hidden;
+}
+#vision_head {
+	visibility: hidden;
+}
+#mission_head {
+	visibility: hidden;
+}
+#philosophy_head {
+	visibility: hidden;
+}
+#current_focus_head {
+	visibility: visible;
+}
+#five_year_plan_head {
+	visibility: hidden;
 }
 #about .matter {
 	position: absolute;
-	width: 700px;
-	height: 700px;
-	text-align: justify;
-	text-justify: inter-word;
-	padding: 20px 32px;
-	font-size: 15px;
-	text-decoration: none;
-	font-family: Arial;
-	font-size: 18px;
-	font-weight: normal;
+	width: 800px;
+	height: 900px;
 	margin: 0;
+	padding: 0;
 }
-#overview_head {
-	z-index:1;
-}
-#vision_head {
-	z-index:0;
-}
-#mission_head {
-	z-index: 0;
-}
-#philosophy_head {
-	z-index: 0;
-}
-#current_focus_head {
-	z-index: 0;
-}
-#five_year_plan_head {
-	z-index: 0;
-}
-#overview{
-	visibility:hidden;
-}
-#vision{
-	visibility:hidden;
-}
-#mission{
-	visibility:hidden;
-}
-#philosophy{
-	visibility:hidden;
-}
-#five_year_plan{
-	visibility:hidden;
-}
-#current_focus .current_focus {
-	position: absolute;
-	width: 365px;
-	height: 265px;
+#about .matter p{
+	margin: 20px 5px;
 	text-align: justify;
-	text-justify: inter-word;
-	font-size: 15px;
-	text-decoration: none;
 	font-family: Arial;
-	font-size: 18px;
-	font-weight: normal;
-	background-color: #000000;
-	color: white;	
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 25px;
 }
-#current_focus .current_focus .current_focus_heading{
+#overview {
+	visibility: hidden;
+}
+#vision {
+	visibility: hidden;
+}
+#mission {
+	visibility: hidden;
+}
+#philosophy {
+	visibility: hidden;
+}
+#current_focus {
+	visibility: visible;
+}
+#current_focus .current_focus_matter {
 	position: absolute;
-	width: 365px;
+	width: 350px;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	overflow-x: hidden;
+
+}
+.current_focus_heading {
+	position: absolute;
+	width: 350px;
 	height: 50px;
-	top: 5px;
 	margin: 0;
-	padding: 0 30px;
-	text-align: left;
-	vertical-align: middle;
-	line-height: 30px;
-  text-decoration: none;	
-  display: inline-block;
-  font-size: 15px;
-	text-decoration: none;
-	font-family: Arial;
-	font-size: 12px;
-	font-weight: normal;
-	background-color: white;
-	color: #000000;
+	padding: 0;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 20px;
+	top: 5px;
+	left: 0;
 }
-#current_focus .current_focus .text {
+.text {
 	position: relative;
-	width: 365px;
-	top: 50px;
-}
-#current_focus .current_focus .text ul li{
-	margin: 10px 0;
-	margin-right: 10px;
-	
+	width: 350px;
+	height: 200px;
+	margin-right: -10px
+	padding: 0;
+	top: 55px;
+	font-size: 20px;
+	text-align: justify;
 }
 #education {
-	left: 0px;
-	top: 0px;
+	top: 5px;
+	left: 10px;
 }
 #empowerment {
-	right: 0px;
-	top: 0px;
+	top: 5px;
+	right: 10px;
 }
 #homes {
-	left: 0px;
-	top: 275px;
+	top: 330px;
+	left: 10px;
 }
 #development {
-	right: 0px;
-	top: 275px;
+	top: 330px;
+	right: 10px;
 }
 #environment {
-	left: 0px;
-	top: 550px;
+	top: 540px;
+	left: 10px;
 }
 
+#five_year_plan {
+	visibility: hidden;
+}
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
 	position: absolute;
