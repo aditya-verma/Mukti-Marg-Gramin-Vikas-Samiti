@@ -219,7 +219,7 @@ body {
 	color: #ffffff;
 }
 #overview_head {
-	visibility: hidden;
+	visibility: visible;
 }
 #vision_head {
 	visibility: hidden;
@@ -231,7 +231,7 @@ body {
 	visibility: hidden;
 }
 #current_focus_head {
-	visibility: visible;
+	visibility: hidden;
 }
 #five_year_plan_head {
 	visibility: hidden;
@@ -252,7 +252,7 @@ body {
 	font-size: 25px;
 }
 #overview {
-	visibility: hidden;
+	visibility: visible;
 }
 #vision {
 	visibility: hidden;
@@ -264,7 +264,7 @@ body {
 	visibility: hidden;
 }
 #current_focus {
-	visibility: visible;
+	visibility: hidden;
 }
 #current_focus .current_focus_matter {
 	position: absolute;
@@ -322,6 +322,9 @@ body {
 
 #five_year_plan {
 	visibility: hidden;
+}
+#five_year_plan {
+	color: #ffffff;
 }
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
