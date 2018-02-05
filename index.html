@@ -25,19 +25,27 @@
 			<ul>
 				<li>  <a href="index.html">Home</a> </li>
 				<li>  <a href="about.html">About Us</a> </li>
-				<li>  <a href="contact.html">Event</a> </li>
-				<li>  <a href="contact.html">Gallery</a> </li>
+				<li>  <a href="event.html">Event</a> </li>
+				<li>  <a href="gallery.html">Gallery</a> </li>
 				<li>  <a href="contact.html">Contact</a> </li>
 			</ul>
 		</div>
 <!------------------------------------Beg of Poster-------------------------->
-		<div id="poster">
-		<img src="Images/poster.jpg" alt="Mother Teresa">
+		<div class="w3-content w3-display-container" >
+			<img class="mySlides" src="Images/1.jpg" style="width:100%">
+			<img class="mySlides" src="Images/2.jpg" style="width:100%">
+			<img class="mySlides" src="Images/3.jpg" style="width:100%">
+			<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			</div>
 		</div>
 <!------------------------------------Beg of Message Box-------------------------->
 		<div id="wrapper-message-box">
-			<div id="message-box-line">	
-			</div>
+			
 			<div id="message-box">
 				<button type="image" class="collapsible"><span>Leave A Message </span></button>
 				<div class="content">
@@ -46,6 +54,8 @@
 		</div>
 <!------------------------------------Beg of footer-------------------------->		
 		<div id="footer">
+			<div id="line">	
+			</div>
 			<div id="social_footer">
 				<ul>
 					<li>  <img src="Images/home.png" alt="Allahabad" width="30" height="30" align="center">Allahabad</li>
