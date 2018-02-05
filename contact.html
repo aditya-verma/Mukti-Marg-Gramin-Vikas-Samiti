@@ -4,40 +4,41 @@
 	<title>Mukti Marg Gramin Vikas Samiti</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/contact.css">
-	<script src="js/index.js"></script>
+	<script src="js/contact.js"></script>
 </head>
 <body id="body">
-  <div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-	</div>
-	<div id="content">
-		<div id="contact_bar">
-			<ul>
-				<li>  <img src="Images/home.png" alt="Allahabad" width="30" height="30" align="center">Allahabad</li>
-				<li>  <a href="tel:+91991875059"><img src="Images/phone.png" alt="Call" width="30" height="30" align="center">+91991875059</a> </li>
-				<li>  <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><img src="Images/mail.png" alt="Mail Us" width="30" height="30" align="center">mail@gmail.com</a> </li>
-			</ul>
-		</div>
+  <div id="content">
 		<div id="header">
 			<a href="index.html"><img src="Images/logo.png" alt="Mukti Marg Gramin Vikas Samiti" width="120" height="120" align="center"></a>
 			<ul>
 				<li>  <a href="index.html">Home</a> </li>
 				<li>  <a href="about.html">About Us</a> </li>
-				<li>  <a href="contact.html">Event</a> </li>
-				<li>  <a href="contact.html">Gallery</a> </li>
+				<li>  <a href="event.html">Event</a> </li>
+				<li>  <a href="gallery.html">Gallery</a> </li>
 				<li>  <a href="contact.html">Contact</a> </li>
 			</ul>
 		</div>
 <!------------------------------------Beg of Poster-------------------------->
-		<div id="poster">
-		<img src="Images/poster.jpg" alt="Mother Teresa">
+		<div id="map" style="height: 1000px; width: 800px;">
+      <script>
+				function initMap() {
+        var civil_lines = {lat: 25.456091, lng: 81.833481};
+        var allahabad = {lat: 25.4358, lng: 81.8463};
+        var map = new google.maps.Map(document.getElementById('map'), {
+		        zoom: 13,
+        		center: allahabad
+          });
+        var marker = new google.maps.Marker({
+         		position: allahabad,
+        		map: map
+          });
+        }
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key&callback=initMap"></script>
 		</div>
 <!------------------------------------Beg of Message Box-------------------------->
 		<div id="wrapper-message-box">
-			<div id="message-box-line">	
-			</div>
+			<button id="message-box-button"><span>hello</span></button>
 			<div id="message-box">
 				<button type="image" class="collapsible"><span>Leave A Message </span></button>
 				<div class="content">
@@ -46,6 +47,8 @@
 		</div>
 <!------------------------------------Beg of footer-------------------------->		
 		<div id="footer">
+			<div id="box-line">	
+			</div>
 			<div id="social_footer">
 				<ul>
 					<li>  <img src="Images/home.png" alt="Allahabad" width="30" height="30" align="center">Allahabad</li>

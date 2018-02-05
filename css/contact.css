@@ -19,77 +19,11 @@ body {
 	src: url('../fonts/audiowide-regular-webfont.eot');
 	src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
 }
-@font-face {
-	font-family: 'fontawesome-webfont';
-	src: url('../fonts/fontawesome-webfont.eot');
-	src: url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
-}
 
-/*----------------------------------------Contact Bar-----------------------------------------*/
-#contact_bar {
-	margin: 0;
-	min-height: 60px;
-	min-width: 940px;
-	padding: 0;
-	width: 100%;
-	top: 0px;
-	transition: top 0.3s;
-	background-color: #262626;
-	}
-#contact_bar div {
-	margin: 0 auto;
-	max-width: 940px;
-	min-height: 60px;
-	padding: 0 10px;
-	
-}
-#contact_bar ul{	
-	display: inline-block;
-	float: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: auto;
-	}
-#contact_bar ul li	{
-	float: left;
-	color: #ffffff;
-	text-decoration: none;
-	display: block;
-	font-family: Arial;
-	font-size: 18px;
-	font-weight: normal;
-	line-height: 59px;
-	margin: 0;
-	min-height: 60px;
-	padding: 0 24px;
- *padding: 0 23px; /* Needed for IE8 and old versions */
-	text-align: center;
-	width: auto;
-	}
-#contact_bar ul li img {
-  display: inline-block;
-  margin: 0 10px;
-}
-#contact_bar ul li a {
-	color: #ffffff;
-	text-decoration: none;
-	display: block;
-	font-family: Arial;
-	font-size: 18px;
-	font-weight: normal;
-	line-height: 59px;
-	margin: 0;
-	min-height: 60px;
-	padding: 0 24px;
- *padding: 0 23px; /* Needed for IE8 and old versions */
-	text-align: center;
-	width: auto;
-}
 /*----------------------------------------header-styles---------------------------------------*/
 #header {
 	position: fixed;
-	top: 60px;
+	top: 0;
 	transition: top 0.3s;
 	margin: 0;
 	min-height: 120px;
@@ -140,78 +74,46 @@ body {
 	width: auto;
 }
 /*----------------------------------------poster-styles---------------------------------------*/
-#poster {
-	position: absolute;
-	left: 0;
-	margin: 0;
-	height: 809px;
-	min-height: 809px;
-	padding: 0;
-	width: auto;
-	min-width: 940px;
-	background-color: #000000;
-	top: 60px;
-	z-index: -1;
-	}
-#poster div {
-	margin: 0 auto;
-	width: 100%;
-	min-height: 120px;
-	padding: 0 10px;
+#map {
+	position: relative;
+	top: 120px;
+	left: 25%;
 }
-/*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
-	position: absolute;
-	margin: 0;
-	width: 100%;
-	min-width: 300px;
-	top: 569px;
+	position: fixed;
+	float: right;
+	z-index: 10;
 }
-#message-box-line {
-	position: absolute;
-	margin: 0;
-	min-height: 2px;
-	height: 2px;
-	width: 100%;
-	top: 300px;
-	background-color: #f06918;
+#message-box-button{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #000000;
 }
 #message-box {
-	position: absolute;
-	width:350px;
-	right: 200px;
-	background-color: transparent;
-	z-index: 1;
-}
-#message-box .collapsible {
-  border-radius: 2px;
-  background-image: url('Image/button.png');
-	background-repeat: no-repeat;
-	background-color: transparent;
-  border: none;
-  text-align: center;
-	color: #ffffff;
-  font-size: 28px;
-  padding: 0px;
-  width: 350px;
-	height: 40px;
-  margin: 0px;
-	position: absolute;
-	top: 254px;
-	cursor: pointer;
+	display: block;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	position: absolute;
+	position: relative;
   margin: 0;
 	min-height: 100px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	top: 871px;
+	top: 120px;
 	background-color: #ffffff;
 }
-
+#box-line {
+	position: absolute;
+	margin: 0;
+	min-height: 2px;
+	height: 2px;
+	width: 100%;
+	top: 0;
+	background-color: #f06918;
+}
 #social_footer {
 	margin: 0;
 	min-height: 50px;
