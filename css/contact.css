@@ -35,6 +35,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 	}
 #header div {
 	margin: 0 auto;
@@ -74,14 +75,28 @@ body {
 	width: auto;
 }
 /*----------------------------------------poster-styles---------------------------------------*/
-#map {
+#container {
 	position: relative;
 	top: 120px;
-	left: 25%;
+	width: 100%;
+	min-height: 600px;
+	overflow: hidden;
+}
+#map-wrapper {
+	position: relative;
+	margin: 50px;	
+}
+#map {
+	border: 2px solid rgba(0,0,0,0.5);
+}
+#about {
+	position: absolute;
+	top: 0;
+	left: 600px;
 }
 #wrapper-message-box {
 	position: fixed;
-	float: right;
+	float: left;
 	z-index: 10;
 }
 #message-box-button{
@@ -102,7 +117,7 @@ body {
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	top: 120px;
+	top: 180px;
 	background-color: #ffffff;
 }
 #box-line {

@@ -19,22 +19,35 @@
 			</ul>
 		</div>
 <!------------------------------------Beg of Poster-------------------------->
-		<div id="map" style="height: 1000px; width: 800px;">
-      <script>
-				function initMap() {
-        var civil_lines = {lat: 25.456091, lng: 81.833481};
-        var allahabad = {lat: 25.4358, lng: 81.8463};
-        var map = new google.maps.Map(document.getElementById('map'), {
-		        zoom: 13,
-        		center: allahabad
-          });
-        var marker = new google.maps.Marker({
-         		position: allahabad,
-        		map: map
-          });
-        }
-			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key&callback=initMap"></script>
+		<div id="container">
+			<div id="map-wrapper" style="height: 500px; width: 500px;">
+				<div id="map" style="height: 450px; width: 450px;">
+					<script>
+						function initMap() {
+						var civil_lines = {lat: 25.456091, lng: 81.833481};
+						var allahabad = {lat: 25.4358, lng: 81.8463};
+						var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 13,
+								center: allahabad
+							});
+						var marker = new google.maps.Marker({
+								position: allahabad,
+								map: map
+							});
+						}
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?key&callback=initMap"></script>
+				</div>
+				<h2>Mukti Marg Gramin Vikas Samiti</h2>
+			</div>
+			<div id="about">
+				<h2><i>Office:</i></h2>
+				<p>21/4 Chak Imam Ali Labour Colony Naini Allahabad Pincode - 211008 Uttar Pradesh</p>
+				<h2>Work Area</h2>
+				<p>Allahabad</p>
+				<h2>For Inquires:- </h2>
+				<p>General Inquiry: <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" style="text-decoration: none;">info@gmail.com</a></p>
+			</div>
 		</div>
 <!------------------------------------Beg of Message Box-------------------------->
 		<div id="wrapper-message-box">
@@ -59,6 +72,7 @@
 				<a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/facebook.png" alt="Follow On Facebook" width="40" height="40" id="facebook"></a>
 			</div>
 			<div id="strip">
+			space for dev info
 			</div>
 		</div>
 <!------------------------------------end of footer-------------------------->
