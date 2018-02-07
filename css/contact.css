@@ -77,15 +77,16 @@ body {
 /*----------------------------------------poster-styles---------------------------------------*/
 #container {
 	position: absolute;
-	top: 120px;
+	top: 0;
 	width: 100%;
-	min-height: 600px;
+	min-height: 700px;
 	background-image: url('../Images/demo.jpg');
 	background-position: center center;
 	overflow: hidden;
 }
 #map-wrapper {
 	position: relative;
+	top: 120px;
 	margin: 25px 50px;	
 }
 #map-wrapper h2 {
@@ -101,6 +102,7 @@ body {
 	top: 0;
 	color: #ffffff;
 	left: 600px;
+	top: 120px;
 }
 #about p {
 	margin: 0;
@@ -134,7 +136,7 @@ body {
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	bottom: 0px;
+	top: 700px;
 	background-color: #ffffff;
 	z-index: 0;
 }
