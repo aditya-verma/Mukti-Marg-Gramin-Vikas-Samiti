@@ -171,7 +171,7 @@ body {
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	top: 0px;
+	top: 0;
 	transition: top 0.3s;
 	background-color: #262626;
 	}
@@ -240,6 +240,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 	}
 #header div {
 	margin: 0 auto;
@@ -279,12 +280,16 @@ body {
 	width: auto;
 }
 /*----------------------------------------poster-styles---------------------------------------*/
-.mySlides {display: block;}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+#poster {
+	position: absolute;
+	top: 0;
+	height: 500px;
+	overflow: hidden;
+}
+#poster .mySlides {display: block;}
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
-	position: absolute;
+	position: fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -312,22 +317,22 @@ body {
 	height: 40px;
   margin: 0px;
 	position: absolute;
-	top: 254px;
+	top: 0;
 	cursor: pointer;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	position: relative;
+	position: absolute;
   margin: 0;
-	min-height: 100px;
+	height: 102px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
+	bottom: 0;
 	background-color: #ffffff;
 }
 #line {
 	margin: 0;
-	min-height: 2px;
 	height: 2px;
 	width: 100%;
 	background-color: #f06918;
@@ -364,9 +369,9 @@ body {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 59px;
+	line-height: 50px;
 	margin: 0;
-	min-height: 60px;
+	min-height: 50px;
 	padding: 0 24px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
@@ -383,9 +388,9 @@ body {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 59px;
+	line-height: 50px;
 	margin: 0;
-	min-height: 60px;
+	min-height: 50px;
 	padding: 0 24px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
@@ -400,4 +405,10 @@ body {
 	float: right;
 	padding-right: 10px;
 	padding-top: 4px;
+}
+#strip {
+	position: relative;
+	background-color: red;
+	height: 50px;
+	text-align: center;
 }

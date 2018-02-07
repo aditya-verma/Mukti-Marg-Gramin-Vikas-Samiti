@@ -31,18 +31,28 @@
 			</ul>
 		</div>
 <!------------------------------------Beg of Poster-------------------------->
-		<div class="w3-content w3-display-container" >
+		<div class="poster" >
+			<img class="mySlides" src="Images/poster.jpg" style="width:100%">
 			<img class="mySlides" src="Images/1.jpg" style="width:100%">
 			<img class="mySlides" src="Images/2.jpg" style="width:100%">
 			<img class="mySlides" src="Images/3.jpg" style="width:100%">
-			<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-				<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-				<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-			</div>
 		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						 x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 3000); // Change image every 3 seconds
+			}
+		</script>
 <!------------------------------------Beg of Message Box-------------------------->
 		<div id="wrapper-message-box">
 			
@@ -66,6 +76,7 @@
 				<a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/facebook.png" alt="Follow On Facebook" width="40" height="40" id="facebook"></a>
 			</div>
 			<div id="strip">
+			info space for dev and copyright
 			</div>
 		</div>
 <!------------------------------------end of footer-------------------------->
