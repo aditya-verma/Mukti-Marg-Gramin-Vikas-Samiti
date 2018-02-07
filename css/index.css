@@ -289,11 +289,13 @@ body {
 #poster .mySlides {display: block;}
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
-	position: fixed;
+	position: absolute;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	min-width: 300px;
+	z-index: 10;
+	bottom: 25%;
+	right: 0;
 }
 
 #message-box {
@@ -301,23 +303,22 @@ body {
 	width:350px;
 	right: 200px;
 	background-color: transparent;
-	z-index: 1;
 }
 #message-box .collapsible {
   border-radius: 2px;
+	background-color: #fff;
   background-image: url('Image/button.png');
 	background-repeat: no-repeat;
-	background-color: transparent;
+	background-position: center;
   border: none;
   text-align: center;
-	color: #ffffff;
+	color: #000000;
   font-size: 28px;
   padding: 0px;
   width: 350px;
 	height: 40px;
   margin: 0px;
 	position: absolute;
-	top: 0;
 	cursor: pointer;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
