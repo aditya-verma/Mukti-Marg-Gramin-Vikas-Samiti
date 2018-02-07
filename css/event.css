@@ -100,6 +100,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 2;
 	}
 #header div {
 	margin: 0 auto;
@@ -140,7 +141,7 @@ body {
 }
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
-	position: absolute;
+	position: fixed;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -152,11 +153,11 @@ body {
 	width:350px;
 	right: 200px;
 	background-color: transparent;
-	z-index: 1;
+	z-index: 0;
 }
 #message-box .collapsible {
   border-radius: 2px;
-  background-image: url('Image/button.png');
+  background-image: url('.../Images/button.png');
 	background-repeat: no-repeat;
 	background-color: transparent;
   border: none;
@@ -168,17 +169,18 @@ body {
 	height: 40px;
   margin: 0px;
 	position: absolute;
-	top: 254px;
+	top: 0px;
 	cursor: pointer;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	position: relative;
+	position: absolute;
   margin: 0;
 	min-height: 100px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
+	bottom: 0;
 	background-color: #ffffff;
 }
 #line {

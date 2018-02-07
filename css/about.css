@@ -168,7 +168,7 @@ body {
 	z-index: -1;
 }
 .container{
-    background-image: url('../Images/demo.jpg')
+    background-image: url('../Images/demo.jpg');
 }
 
 #button_group {
@@ -182,8 +182,9 @@ body {
 	display: block;
 	width: 300px;
 	height: 50px;
-	margin: 5px 0;
-	background-color: #d24e03;
+	margin: 10px 0;
+	background-color: #fcfcfc;
+	opacity: 0.8;
 	border-radius: 5px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -301,6 +302,7 @@ body {
 	color: #ffffff;
 	font-size: 25px;
 }
+
 #overview {
 	visibility: visible;
 }

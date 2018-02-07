@@ -76,23 +76,40 @@ body {
 }
 /*----------------------------------------poster-styles---------------------------------------*/
 #container {
-	position: relative;
+	position: absolute;
 	top: 120px;
 	width: 100%;
 	min-height: 600px;
+	background-image: url('../Images/demo.jpg');
+	background-position: center center;
 	overflow: hidden;
 }
 #map-wrapper {
 	position: relative;
-	margin: 50px;	
+	margin: 25px 50px;	
+}
+#map-wrapper h2 {
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
 }
 #map {
-	border: 2px solid rgba(0,0,0,0.5);
+	border: 2px groove rgba(0,0,0,0.5);
 }
 #about {
 	position: absolute;
 	top: 0;
+	color: #ffffff;
 	left: 600px;
+}
+#about p {
+	margin: 0;
+	padding: 0;
+}
+#about h2 {
+	margin: 0;
+	padding: 0;
+	padding-top: 50px;
 }
 #wrapper-message-box {
 	position: fixed;
@@ -111,38 +128,40 @@ body {
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	position: relative;
+	position: absolute;
   margin: 0;
-	min-height: 100px;
+	height: 102px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	top: 180px;
+	bottom: 0px;
 	background-color: #ffffff;
+	z-index: 0;
 }
 #box-line {
 	position: absolute;
 	margin: 0;
-	min-height: 2px;
+	height: 2px;
 	height: 2px;
 	width: 100%;
 	top: 0;
 	background-color: #f06918;
 }
 #social_footer {
+	position: absolute;
 	margin: 0;
-	min-height: 50px;
+	height: 50px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
+	top: 2px;
 	background-color: #262626;
 	}
 #social_footer div {
 	margin: 0 auto;
 	max-width: 940px;
-	min-height: 50px;
+	height: 50px;
 	padding: 0 10px;
-	
 }
 #social_footer ul{	
 	display: inline-block;
@@ -160,9 +179,9 @@ body {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 59px;
+	line-height: 50px;
 	margin: 0;
-	min-height: 60px;
+	height: 50px;
 	padding: 0 24px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
@@ -179,9 +198,9 @@ body {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 59px;
+	line-height: 50x;
 	margin: 0;
-	min-height: 60px;
+	height: 50px;
 	padding: 0 24px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
@@ -196,4 +215,11 @@ body {
 	float: right;
 	padding-right: 10px;
 	padding-top: 4px;
+}
+#strip {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 52;
+	text-align: center;
 }
