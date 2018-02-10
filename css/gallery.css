@@ -85,6 +85,13 @@ body {
 	text-align: center;
 	width: auto;
 }
+#content {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-image: url("../Images/redirect.gif");
+}
 /*----------------------------------------header-styles---------------------------------------*/
 #header {
 	position: fixed;
@@ -138,47 +145,29 @@ body {
 	text-transform: uppercase;
 	width: auto;
 }
-/*----------------------------------------Message-Box---------------------------------*/
-#wrapper-message-box {
+/*-------------------------------content-------------------------------------------*/
+#container {
 	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	min-width: 300px;
+	
+	overflow: visible;
+	top: 0;
+	
+	z-index: -10;
 }
-
-#message-box {
+#container img {
 	position: absolute;
-	width:350px;
-	right: 200px;
-	background-color: transparent;
-	z-index: 1;
-}
-#message-box .collapsible {
-  border-radius: 2px;
-  background-image: url('Image/button.png');
-	background-repeat: no-repeat;
-	background-color: transparent;
-  border: none;
-  text-align: center;
-	color: #ffffff;
-  font-size: 28px;
-  padding: 0px;
-  width: 350px;
-	height: 40px;
-  margin: 0px;
-	position: absolute;
-	top: 254px;
-	cursor: pointer;
+	left: 35%;
+	top: 35%;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
-	position: relative;
+	position: absolute;
   margin: 0;
 	min-height: 100px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
+	bottom: 0;
 	background-color: #ffffff;
 }
 #line {
