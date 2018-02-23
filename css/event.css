@@ -1,14 +1,8 @@
-body, html{
-    min-height:100%;
-    min-width:100%;
-}
-
 body {
 	margin: 0;
 	padding: 0;
 	position: relative;
 	width: auto;
-	height: auto;
 	background-color: #ffffff;
 	overflow-x: hidden;
 }
@@ -30,14 +24,6 @@ body {
 	src: url('../fonts/fontawesome-webfont.eot');
 	src: url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
 }
-#content {
-		position: relative;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    width: 100%;
-    max-width: 1920px;
-}
-
 /*----------------------------------------Contact Bar-----------------------------------------*/
 #contact_bar {
 	margin: 0;
@@ -114,7 +100,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 10;
+	z-index: 2;
 	}
 #header div {
 	margin: 0 auto;
@@ -153,270 +139,37 @@ body {
 	text-transform: uppercase;
 	width: auto;
 }
-/*----------------------------------------poster-styles---------------------------------------*/
-#container {
-	position: absolute;
-	width: 100%;
-	overflow: visible;
-	background-size: cover;
-	background-position: center center;
-	margin: 0;
-	height: 1140px;
-	padding: 0;
-	width: 100%;
-	top: 60px;
-	z-index: -1;
-}
-.container{
-    background-image: url('../Images/demo.jpg');
-}
-
-#button_group {
-	position: absolute;
-	left: 60px;
-	top: 250px;
-	color: #fff;	
-	border-radius: 5px;
-}
-#button_group .btn {
-	display: block;
-	width: 300px;
-	height: 50px;
-	margin: 10px 0;
-	background-color: #fcfcfc;
-	opacity: 0.8;
-	border-radius: 5px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 18px;
-	font-family: Arial;
-	-webkit-transition-duration: 0.4s; /* Safari */
- 	transition-duration: 0.4s;
-	cursor: pointer;	
-}
-#button_group .btn:hover {
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-}
-
-#about {
-	position: absolute;
-	top: 225px;
-	height: 400px;
-	left: 500px;
-}
-/*---------------------------------Headings begin--------------------------------*/
-#about .heading {
-	position: absolute;
-	width: 800px;
-	height: 100px;
-	margin: 0;
-	padding: 0;
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-	top: -100px;	
-}
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-#about .heading h1 {
-	text-align: left;
-	padding-left: 20px;
-	font-family: Arial;
-	font-size: 40px;
-	line-height: 50px;
-	text-transform: uppercase;
-	color: #ffffff;
-}
-#overview_head {
-	visibility: visible;
-}
-#vision_head {
-	visibility: hidden;
-}
-#mission_head {
-	visibility: hidden;
-}
-#philosophy_head {
-	visibility: hidden;
-}
-#current_focus_head {
-	visibility: hidden;
-}
-#five_year_plan_head {
-	visibility: hidden;
-}
-#about .matter {
-	position: absolute;
-	width: 750px;
-	height: 900px;
-	margin: 0;
-	padding: 0;
-}
-#about .matter p{
-	margin: 20px 5px;
-	text-align: justify;
-	font-family: Arial;
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 25px;
-}
-
-#overview {
-	visibility: visible;
-}
-#vision {
-	visibility: hidden;
-}
-#mission {
-	visibility: hidden;
-}
-#philosophy {
-	visibility: hidden;
-}
-#current_focus {
-	visibility: hidden;
-}
-#current_focus .current_focus_matter {
-	position: absolute;
-	width: 380px;
-	height: 300px;
-	margin: 0;
-	padding: 0;
-	background-color: #ffffff;
-}
-.current_focus_heading {
-	position: absolute;
-	width: 380px;
-	height: 50px;
-	margin: 0;
-	background-color: #000000;
-	color: #ffffff;
-	line-height: 20px;
-	top: 5px;
-	left: 0;
-}
-.text {
-	position: absolute;
-	width: 380px;
-	height: 200px;
-	left: 0;
-	margin: 0;	
-	top: 60px;
-	font-size: 20px;
-	text-align: justify;
-	background-color: red;
-}
-.text ul li{
-	padding-right: 10px;
-}
-#education {
-	top: 5px;
-	left: 10px;
-}
-#empowerment {
-	top: 5px;
-	right: 10px;
-}
-#homes {
-	top: 325px;
-	left: 10px;
-}
-#development {
-	top: 325px;
-	right: 10px;
-}
-#environment {
-	top: 640px;
-	left: 10px;
-}
-
-#five_year_plan {
-	visibility: hidden;
-}
-#five_year_plan {
-	color: #ffffff;
-}
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
-	position: absolute;
+	position: fixed;
 	margin: 0;
+	padding: 0;
 	width: 100%;
 	min-width: 300px;
-	top: 900px;
 }
-#message-box-line {
-	position: absolute;
-	margin: 0;
-	min-height: 2px;
-	height: 2px;
-	width: 100%;
-	top: 300px;
-	background-color: #f06918;
-}
+
 #message-box {
 	position: absolute;
 	width:350px;
 	right: 200px;
 	background-color: transparent;
-	z-index: 1;
+	z-index: 0;
 }
 #message-box .collapsible {
   border-radius: 2px;
-  background-image: url('Image/button.png');
-	background-repeat: repeat;
+  background-image: url('.../Images/button.png');
+	background-repeat: no-repeat;
 	background-color: transparent;
   border: none;
   text-align: center;
 	color: #ffffff;
   font-size: 28px;
-  padding: 0;
+  padding: 0px;
   width: 350px;
 	height: 40px;
-  margin: 0;
+  margin: 0px;
 	position: absolute;
-	top: 254px;
+	top: 0px;
 	cursor: pointer;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
@@ -425,12 +178,19 @@ body {
   margin: 0;
 	min-height: 100px;
 	min-width: 940px;
-	left: 0;
 	padding: 0;
 	width: 100%;
-	top: 1202px;
+	bottom: 0;
 	background-color: #ffffff;
 }
+#line {
+	margin: 0;
+	min-height: 2px;
+	height: 2px;
+	width: 100%;
+	background-color: #f06918;
+}
+
 #social_footer {
 	margin: 0;
 	min-height: 50px;
@@ -444,6 +204,7 @@ body {
 	max-width: 940px;
 	min-height: 50px;
 	padding: 0 10px;
+	
 }
 #social_footer ul{	
 	display: inline-block;
@@ -452,7 +213,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: auto;
-}
+	}
 #social_footer ul li	{
 	float: left;
 	color: #ffffff;

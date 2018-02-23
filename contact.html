@@ -1,31 +1,78 @@
 <html lang"en">
 <head>
-	<title>CONTACT-NGO WEBSITE</title>
+	<meta charset="utf-8">
+	<title>Mukti Marg Gramin Vikas Samiti</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/contact.css">
+	<script src="js/contact.js"></script>
 </head>
-<body>
+<body id="body">
   <div id="content">
 		<div id="header">
+			<a href="index.html"><img src="Images/logo.png" alt="Mukti Marg Gramin Vikas Samiti" width="120" height="120" align="center"></a>
 			<ul>
-				<li>  <a href="index.html">HOME</a> </li>
-				<li>  <a href="about.html">ABOUT</a> </li>
-				<li>  <a href="contact.html">CONTACT</a> </li>
+				<li>  <a href="index.html">Home</a> </li>
+				<li>  <a href="about.html">About Us</a> </li>
+				<li>  <a href="event.html">Event</a> </li>
+				<li>  <a href="gallery.html">Gallery</a> </li>
+				<li>  <a href="contact.html">Contact</a> </li>
 			</ul>
 		</div>
-		<div id="middle">
+<!------------------------------------Beg of Poster-------------------------->
+		<div id="container">
+			<div id="map-wrapper" style="height: 500px; width: 500px;">
+				<div id="map" style="height: 450px; width: 450px;">
+					<script>
+						function initMap() {
+						var civil_lines = {lat: 25.456091, lng: 81.833481};
+						var allahabad = {lat: 25.4358, lng: 81.8463};
+						var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 13,
+								center: allahabad
+							});
+						var marker = new google.maps.Marker({
+								position: allahabad,
+								map: map
+							});
+						}
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?key&callback=initMap"></script>
+				</div>
+				<h2>Mukti Marg Gramin Vikas Samiti</h2>
+			</div>
+			<div id="about">
+				<h2><i>Office:</i></h2>
+				<p>21/4 Chak Imam Ali Labour Colony Naini Allahabad Pincode - 211008 Uttar Pradesh</p>
+				<h2>Work Area</h2>
+				<p>Allahabad</p>
+				<h2>For Inquires:- </h2>
+				<p>General Inquiry: <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" style="text-decoration: none; color: #ffffff;">info@gmail.com</a></p>
+			</div>
+		</div>
+<!------------------------------------Beg of Message Box-------------------------->
+		<div id="wrapper-message-box">
+			<button id="message-box-button"><span>hello</span></button>
+			<div id="message-box">
+				<button type="image" class="collapsible"><span>Leave A Message </span></button>
+				<div class="content">
+				</div>
+			</div>
 		</div>
 <!------------------------------------Beg of footer-------------------------->		
-		<div class="footer">
-			<div id="AboutUs">
-			
-			</div>
-			<div id="qLink">
+		<div id="footer">
+			<div id="box-line">	
 			</div>
 			<div id="social_footer">
 				<ul>
-					<li> <a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/facebook.png" alt="Follow On Facebook" width="50" height="50"></a> </li>
-					<li> <a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/twitter.png" alt="Follow On Twitter" width="50" height="50"></a> </li>
+					<li>  <img src="Images/home.png" alt="Allahabad" width="30" height="30" align="center">Allahabad</li>
+					<li>  <a href="tel:+91991875059"><img src="Images/phone.png" alt="Call" width="30" height="30" align="center">+91991875059</a> </li>
+					<li>  <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><img src="Images/mail.png" alt="Mail Us" width="30" height="30" align="center">mail@gmail.com</a> </li>
 				</ul>
+				<a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/twitter.png" alt="Follow On Twitter" width="40" height="40" id="twitter"></a>
+				<a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/facebook.png" alt="Follow On Facebook" width="40" height="40" id="facebook"></a>
+			</div>
+			<div id="strip">
+			space for dev info
 			</div>
 		</div>
 <!------------------------------------end of footer-------------------------->

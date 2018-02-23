@@ -123,7 +123,7 @@ body {
 #content {
 		position: relative;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     width: 100%;
     max-width: 1920px;
 }
@@ -171,7 +171,7 @@ body {
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	top: 0px;
+	top: 0;
 	transition: top 0.3s;
 	background-color: #262626;
 	}
@@ -240,6 +240,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 	}
 #header div {
 	margin: 0 auto;
@@ -281,74 +282,61 @@ body {
 /*----------------------------------------poster-styles---------------------------------------*/
 #poster {
 	position: absolute;
-	left: 0;
-	margin: 0;
-	height: 809px;
-	min-height: 809px;
-	padding: 0;
-	width: auto;
-	min-width: 940px;
-	background-color: #000000;
-	top: 60px;
-	z-index: -1;
-	}
-#poster div {
-	margin: 0 auto;
-	width: 100%;
-	min-height: 120px;
-	padding: 0 10px;
+	top: 0;
+	height: 500px;
+	overflow: hidden;
 }
+#poster .mySlides {display: block;}
 /*----------------------------------------Message-Box---------------------------------*/
 #wrapper-message-box {
 	position: absolute;
 	margin: 0;
-	width: 100%;
+	padding: 0;
 	min-width: 300px;
-	top: 569px;
+	z-index: 10;
+	bottom: 25%;
+	right: 0;
 }
-#message-box-line {
-	position: absolute;
-	margin: 0;
-	min-height: 2px;
-	height: 2px;
-	width: 100%;
-	top: 300px;
-	background-color: #f06918;
-}
+
 #message-box {
 	position: absolute;
 	width:350px;
 	right: 200px;
 	background-color: transparent;
-	z-index: 1;
 }
 #message-box .collapsible {
   border-radius: 2px;
+	background-color: #fff;
   background-image: url('Image/button.png');
 	background-repeat: no-repeat;
-	background-color: transparent;
+	background-position: center;
   border: none;
   text-align: center;
-	color: #ffffff;
+	color: #000000;
   font-size: 28px;
   padding: 0px;
   width: 350px;
 	height: 40px;
   margin: 0px;
 	position: absolute;
-	top: 254px;
 	cursor: pointer;
 }
 /*----------------------------------------footer-styles---------------------------------------*/
 #footer {
 	position: absolute;
   margin: 0;
-	min-height: 100px;
+	height: 102px;
 	min-width: 940px;
 	padding: 0;
 	width: 100%;
-	top: 871px;
+	bottom: 0;
 	background-color: #ffffff;
+}
+#line {
+	margin: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #f06918;
 }
 
 #social_footer {
@@ -382,9 +370,9 @@ body {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 59px;
+	line-height: 50px;
 	margin: 0;
-	min-height: 60px;
+	min-height: 50px;
 	padding: 0 24px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
@@ -401,9 +389,9 @@ body {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: normal;
-	line-height: 59px;
+	line-height: 50px;
 	margin: 0;
-	min-height: 60px;
+	min-height: 50px;
 	padding: 0 24px;
  *padding: 0 23px; /* Needed for IE8 and old versions */
 	text-align: center;
@@ -418,4 +406,10 @@ body {
 	float: right;
 	padding-right: 10px;
 	padding-top: 4px;
+}
+#strip {
+	position: relative;
+	background-color: red;
+	height: 50px;
+	text-align: center;
 }

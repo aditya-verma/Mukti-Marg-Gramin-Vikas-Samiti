@@ -25,19 +25,37 @@
 			<ul>
 				<li>  <a href="index.html">Home</a> </li>
 				<li>  <a href="about.html">About Us</a> </li>
-				<li>  <a href="contact.html">Event</a> </li>
-				<li>  <a href="contact.html">Gallery</a> </li>
+				<li>  <a href="event.html">Event</a> </li>
+				<li>  <a href="gallery.html">Gallery</a> </li>
 				<li>  <a href="contact.html">Contact</a> </li>
 			</ul>
 		</div>
 <!------------------------------------Beg of Poster-------------------------->
-		<div id="poster">
-		<img src="Images/poster.jpg" alt="Mother Teresa">
+		<div class="poster" >
+			<img class="mySlides" src="Images/poster.jpg" style="width:100%">
+			<img class="mySlides" src="Images/1.jpg" style="width:100%">
+			<img class="mySlides" src="Images/2.jpg" style="width:100%">
+			<img class="mySlides" src="Images/3.jpg" style="width:100%">
 		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						 x[i].style.display = "none";  
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}    
+					x[myIndex-1].style.display = "block";  
+					setTimeout(carousel, 3000); // Change image every 3 seconds
+			}
+		</script>
 <!------------------------------------Beg of Message Box-------------------------->
 		<div id="wrapper-message-box">
-			<div id="message-box-line">	
-			</div>
+			
 			<div id="message-box">
 				<button type="image" class="collapsible"><span>Leave A Message </span></button>
 				<div class="content">
@@ -46,6 +64,8 @@
 		</div>
 <!------------------------------------Beg of footer-------------------------->		
 		<div id="footer">
+			<div id="line">	
+			</div>
 			<div id="social_footer">
 				<ul>
 					<li>  <img src="Images/home.png" alt="Allahabad" width="30" height="30" align="center">Allahabad</li>
@@ -56,6 +76,7 @@
 				<a href="https://www.facebook.com/Mukti-Marg-Gramin-Vikas-Samiti-349450032138450/"><img src="Images/facebook.png" alt="Follow On Facebook" width="40" height="40" id="facebook"></a>
 			</div>
 			<div id="strip">
+			info space for dev and copyright
 			</div>
 		</div>
 <!------------------------------------end of footer-------------------------->
