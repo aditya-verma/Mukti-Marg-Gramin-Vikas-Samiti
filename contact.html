@@ -89,11 +89,11 @@
 		                <div class="col-sm-6">
 		                    <div class="feature bordered">
 		                        <h1 class="large uppercase mb64 mb-xs-24">Write to us</h1>
-		                        <form class="form-email" data-success="Thanks for writing to us! We will get in touch with you shortly." data-error="Please fill all fields correctly." method="POST" netlify>
+		                        <form class="form-email" name="Written to us" data-success="Thanks for writing to us! We will get in touch with you shortly." data-error="Please fill all fields correctly." action="Thank You!" method="POST" netlify>
 		                            <input type="text" class="validate-required" name="name" placeholder="Name">
 		                            <input type="text" class="validate-required" name="email" placeholder="Email">
 		                            <input type="text" class="validate-required" name="message" placeholder="Your Message" style="height:75px">
-																<div netlify-recaptcha></div>
+																<div netlify-recaptcha></div><br>
 																<button type="submit">Send</button>
 		                        </form>
 		                    </div>
