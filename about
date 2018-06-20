@@ -20,7 +20,7 @@
 		        <div class="nav-utility">
 		            <div class="module left">
 		                <i class="ti-location-arrow">&nbsp;</i>
-		                <span class="sub"><a href="contact.html" target="_blank">Allahabad, Uttar Pradesh, India</a></span>
+		                <span class="sub"><a href="contact" target="_blank">Allahabad, Uttar Pradesh, India</a></span>
 		            </div>
 		            <div class="module left">
 		                <i class="ti-email">&nbsp;</i>
@@ -44,15 +44,15 @@
 		                <div class="module left">
 		                    <ul class="menu">
 		                        <li>
-		                            <a href="index.html">home </a>
+		                            <a href="index">home </a>
 		                        </li><li class="vpf">
-		                            <a href="event.html">events </a>
+		                            <a href="event">events </a>
 		                        </li><li class="vpf">
-		                            <a href="gallery.html">gallery </a>
+		                            <a href="gallery">gallery </a>
 		                        </li><li class="vpf">
-		                            <a href="about.html">about us </a>
+		                            <a href="about">about us </a>
 		                        </li><li class="vpf">
-		                            <a href="contact.html">contact us&nbsp;</a>
+		                            <a href="contact">contact us&nbsp;</a>
 		                        </li>
 		                        
 		                        
